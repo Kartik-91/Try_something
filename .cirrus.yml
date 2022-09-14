@@ -1,0 +1,12 @@
+task:
+  name: "Try Something"
+  timeout_in: 120m
+  container:
+      image: ghcr.io/kartik-91/docker:ubuntu
+      cpu: 8
+      memory: 20G
+
+  Switch_User:
+      - su - ubuntu
+      - pwd
+      - mkdir /home/ubuntu/work
