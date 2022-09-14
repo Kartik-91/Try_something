@@ -1,3 +1,5 @@
+env:
+    CIRRUS_SHELL: bash
 task:
   name: "Try Something"
   timeout_in: 120m
